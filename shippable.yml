@@ -6,7 +6,9 @@ node_js:
   - 0.12
 
 build:
-
+  pre_ci:
+    - sleep 1m
+    
   ci:
     - ps -eax
     - ls -al
